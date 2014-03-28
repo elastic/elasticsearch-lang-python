@@ -5,8 +5,10 @@ The Python (jython) language plugin allows to have `python` as the language of s
 
 In order to install the plugin, simply run: `bin/plugin -install elasticsearch/elasticsearch-lang-python/1.2.0`.
 
-* For 1.0.x elasticsearch versions, look at [master branch](https://github.com/elasticsearch/elasticsearch-lang-python/tree/master).
-* For 0.90.x elasticsearch versions, look at [1.x branch](https://github.com/elasticsearch/elasticsearch-lang-python/tree/1.x).
+* For master elasticsearch versions, look at [master branch](https://github.com/elasticsearch/elasticsearch-lang-python/tree/master).
+* For 1.1.x elasticsearch versions, look at [es-1.1 branch](https://github.com/elasticsearch/elasticsearch-lang-python/tree/es-1.1).
+* For 1.0.x elasticsearch versions, look at [es-1.0 branch](https://github.com/elasticsearch/elasticsearch-lang-python/tree/es-1.0).
+* For 0.90.x elasticsearch versions, look at [es-0.90 branch](https://github.com/elasticsearch/elasticsearch-lang-python/tree/es-0.90).
 
 |     Python Lang Plugin      |    elasticsearch    |  jython  | Release date |
 |-----------------------------|---------------------|----------|:------------:|
@@ -14,6 +16,13 @@ In order to install the plugin, simply run: `bin/plugin -install elasticsearch/e
 | 1.2.0                       | 0.90                |  2.5.2   |  2013-02-26  |
 | 1.1.0                       | 0.19 -> 0.20        |  2.5.2   |  2012-02-07  |
 | 1.0.0                       | 0.18                |  2.5.2   |  2011-12-05  |
+
+Please read documentation relative to the version you are using:
+
+* [1.3.0-SNAPSHOT](https://github.com/elasticsearch/elasticsearch-lang-python/blob/es-0.90/README.md)
+* [1.2.0](https://github.com/elasticsearch/elasticsearch-lang-python/blob/v1.2.0/README.md)
+* [1.1.0](https://github.com/elasticsearch/elasticsearch-lang-python/blob/v1.1.0/README.md)
+* [1.0.0](https://github.com/elasticsearch/elasticsearch-lang-python/blob/v1.0.0/README.md)
 
 Using python with function_score
 --------------------------------
