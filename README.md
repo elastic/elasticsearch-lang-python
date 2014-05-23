@@ -12,11 +12,11 @@ In order to install the plugin, simply run: `bin/plugin -install elasticsearch/e
 
 |     Python Lang Plugin      |    elasticsearch    |  jython  | Release date |
 |-----------------------------|---------------------|----------|:------------:|
-| 3.0.0-SNAPSHOT              | master              |  2.5.3   |  XXXX-XX-XX  |
+| 2.1.0-SNAPSHOT              | 1.1.0 -> 1.1        |  2.5.3   |  XXXX-XX-XX  |
 
 Please read documentation relative to the version you are using:
 
-* [3.0.0-SNAPSHOT](https://github.com/elasticsearch/elasticsearch-lang-python/blob/master/README.md)
+* [2.1.0-SNAPSHOT](https://github.com/elasticsearch/elasticsearch-lang-python/blob/es-1.1/README.md)
 
 Using python with function_score
 --------------------------------
