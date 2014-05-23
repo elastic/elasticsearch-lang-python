@@ -6,17 +6,18 @@ The Python (jython) language plugin allows to have `python` as the language of s
 In order to install the plugin, simply run: `bin/plugin -install elasticsearch/elasticsearch-lang-python/2.0.0`.
 
 * For master elasticsearch versions, look at [master branch](https://github.com/elasticsearch/elasticsearch-lang-python/tree/master).
+* For 1.2.x elasticsearch versions, look at [es-1.2 branch](https://github.com/elasticsearch/elasticsearch-lang-python/tree/es-1.2).
 * For 1.1.x elasticsearch versions, look at [es-1.1 branch](https://github.com/elasticsearch/elasticsearch-lang-python/tree/es-1.1).
 * For 1.0.x elasticsearch versions, look at [es-1.0 branch](https://github.com/elasticsearch/elasticsearch-lang-python/tree/es-1.0).
 * For 0.90.x elasticsearch versions, look at [es-0.90 branch](https://github.com/elasticsearch/elasticsearch-lang-python/tree/es-0.90).
 
 |     Python Lang Plugin      |    elasticsearch    |  jython  | Release date |
 |-----------------------------|---------------------|----------|:------------:|
-| 3.0.0-SNAPSHOT              | master              |  2.5.3   |  XXXX-XX-XX  |
+| 2.2.0-SNAPSHOT              | 1.2.0 -> 1.2        |  2.5.3   |  XXXX-XX-XX  |
 
 Please read documentation relative to the version you are using:
 
-* [3.0.0-SNAPSHOT](https://github.com/elasticsearch/elasticsearch-lang-python/blob/master/README.md)
+* [2.2.0-SNAPSHOT](https://github.com/elasticsearch/elasticsearch-lang-python/blob/es-1.2/README.md)
 
 Using python with function_score
 --------------------------------
