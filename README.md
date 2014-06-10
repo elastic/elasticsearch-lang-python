@@ -3,7 +3,7 @@ Python lang Plugin for Elasticsearch
 
 The Python (jython) language plugin allows to have `python` as the language of scripts to execute.
 
-In order to install the plugin, simply run: `bin/plugin -install elasticsearch/elasticsearch-lang-python/2.0.0`.
+In order to install the plugin, simply run: `bin/plugin -install elasticsearch/elasticsearch-lang-python/2.2.0`.
 
 * For master elasticsearch versions, look at [master branch](https://github.com/elasticsearch/elasticsearch-lang-python/tree/master).
 * For 1.2.x elasticsearch versions, look at [es-1.2 branch](https://github.com/elasticsearch/elasticsearch-lang-python/tree/es-1.2).
@@ -13,11 +13,11 @@ In order to install the plugin, simply run: `bin/plugin -install elasticsearch/e
 
 |     Python Lang Plugin      |    elasticsearch    |  jython  | Release date |
 |-----------------------------|---------------------|----------|:------------:|
-| 2.2.0-SNAPSHOT              | 1.2.0 -> 1.2        |  2.5.3   |  XXXX-XX-XX  |
+| 2.2.0                       | 1.2.0 -> 1.2        |  2.5.3   |  2014-06-10  |
 
 Please read documentation relative to the version you are using:
 
-* [2.2.0-SNAPSHOT](https://github.com/elasticsearch/elasticsearch-lang-python/blob/es-1.2/README.md)
+* [2.2.0](https://github.com/elasticsearch/elasticsearch-lang-python/blob/v2.2.0/README.md)
 
 Using python with function_score
 --------------------------------
