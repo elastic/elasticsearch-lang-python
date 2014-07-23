@@ -18,7 +18,7 @@ In order to install the plugin, simply run: `bin/plugin -install elasticsearch/e
 
 Please read documentation relative to the version you are using:
 
-* [2.2.0-SNAPSHOT](https://github.com/elasticsearch/elasticsearch-lang-python/blob/es-1.2/README.md)
+* [2.3.0-SNAPSHOT](https://github.com/elasticsearch/elasticsearch-lang-python/blob/es-1.3/README.md)
 
 Using python with function_score
 --------------------------------
