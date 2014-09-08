@@ -3,23 +3,14 @@ Python lang Plugin for Elasticsearch
 
 The Python (jython) language plugin allows to have `python` as the language of scripts to execute.
 
-In order to install the plugin, simply run: `bin/plugin -install elasticsearch/elasticsearch-lang-python/2.0.0`.
+## Version 2.4.0-SNAPSHOT for Elasticsearch: 1.x
 
-* For master elasticsearch versions, look at [master branch](https://github.com/elasticsearch/elasticsearch-lang-python/tree/master).
-* For 1.4.x elasticsearch versions, look at [es-1.4 branch](https://github.com/elasticsearch/elasticsearch-lang-python/tree/es-1.4).
-* For 1.3.x elasticsearch versions, look at [es-1.3 branch](https://github.com/elasticsearch/elasticsearch-lang-python/tree/es-1.3).
-* For 1.2.x elasticsearch versions, look at [es-1.2 branch](https://github.com/elasticsearch/elasticsearch-lang-python/tree/es-1.2).
-* For 1.1.x elasticsearch versions, look at [es-1.1 branch](https://github.com/elasticsearch/elasticsearch-lang-python/tree/es-1.1).
-* For 1.0.x elasticsearch versions, look at [es-1.0 branch](https://github.com/elasticsearch/elasticsearch-lang-python/tree/es-1.0).
-* For 0.90.x elasticsearch versions, look at [es-0.90 branch](https://github.com/elasticsearch/elasticsearch-lang-python/tree/es-0.90).
+If you are looking for another version documentation, please refer to the 
+[compatibility matrix](http://github.com/elasticsearch/elasticsearch-lang-python#python-lang-plugin-for-elasticsearch).
 
-|     Python Lang Plugin      |    elasticsearch    |  jython  | Release date |
-|-----------------------------|---------------------|----------|:------------:|
-| 2.4.0-SNAPSHOT              | 1.4.0 -> 1.4        |  2.5.3   |  XXXX-XX-XX  |
 
-Please read documentation relative to the version you are using:
-
-* [2.4.0-SNAPSHOT](https://github.com/elasticsearch/elasticsearch-lang-python/blob/es-1.4/README.md)
+User Guide
+----------
 
 Using python with function_score
 --------------------------------
