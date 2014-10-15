@@ -25,6 +25,7 @@ import org.elasticsearch.common.Nullable;
 import org.elasticsearch.common.component.AbstractComponent;
 import org.elasticsearch.common.inject.Inject;
 import org.elasticsearch.common.settings.Settings;
+import org.elasticsearch.script.CompiledScript;
 import org.elasticsearch.script.ExecutableScript;
 import org.elasticsearch.script.ScriptEngineService;
 import org.elasticsearch.script.SearchScript;
@@ -101,6 +102,11 @@ public class PythonScriptEngineService extends AbstractComponent implements Scri
     @Override
     public void close() {
         interp.cleanup();
+    }
+
+    @Override
+    public void scriptRemoved(@Nullable CompiledScript compiledScript) {
+        // Nothing to do
     }
 
     public class PythonExecutableScript implements ExecutableScript {
