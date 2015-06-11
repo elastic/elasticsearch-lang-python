@@ -3,7 +3,7 @@ Python lang Plugin for Elasticsearch
 
 The Python (jython) language plugin allows to have `python` as the language of scripts to execute.
 
-## Version 2.6.0-SNAPSHOT for Elasticsearch: 1.x
+## Version 2.6.0 for Elasticsearch: 1.6
 
 If you are looking for another version documentation, please refer to the 
 [compatibility matrix](http://github.com/elasticsearch/elasticsearch-lang-python#python-lang-plugin-for-elasticsearch).
