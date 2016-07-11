@@ -1,21 +1,13 @@
-**IMPORTANT**: this project now moved to [elasticsearch repository](https://github.com/elastic/elasticsearch/tree/master/plugins/lang-python).
+**IMPORTANT: Project MOVED!**
 
-Only important bug fixes will be merged here. If you have a question about the plugin, please use [discuss.elastic.co](https://discuss.elastic.co/c/elasticsearch). If you want to report a bug, please use [elasticsearch repository](https://github.com/elastic/elasticsearch/issues/new).
+From elasticsearch 2.0 you need to look at the following links:
 
----
+* [Source code](https://github.com/elastic/elasticsearch/tree/master/plugins/).
+* [Documentation](https://www.elastic.co/guide/en/elasticsearch/plugins/current/index.html).
+* [Question? Bugs?](https://discuss.elastic.co/c/elasticsearch)
 
-Python lang Plugin for Elasticsearch
-==================================
+For older versions, look at the following table:
 
-The Python (jython) language plugin allows to have `python` as the language of scripts to execute.
-
-In order to install the plugin, simply run:
-
-```sh
-bin/plugin install elasticsearch/elasticsearch-lang-python/2.7.0
-```
-
-You need to install a version matching your Elasticsearch version:
 
 | elasticsearch |  Python Lang Plugin   |   Docs     |
 |---------------|-----------------------|------------|
@@ -30,140 +22,6 @@ You need to install a version matching your Elasticsearch version:
 | es-1.0        |  2.0.0                | [2.0.0](https://github.com/elasticsearch/elasticsearch-lang-python/tree/v2.0.0/#python-lang-plugin-for-elasticsearch)  |
 | es-0.90       |  1.0.0                | [1.0.0](https://github.com/elasticsearch/elasticsearch-lang-python/tree/v1.0.0/#python-lang-plugin-for-elasticsearch)  |
 
-To build a `SNAPSHOT` version, you need to build it with Maven:
-
-```bash
-mvn clean install
-plugin --install lang-python \
-       --url file:target/releases/elasticsearch-lang-python-X.X.X-SNAPSHOT.zip
-```
-
-User Guide
-----------
-
-Using python with function_score
---------------------------------
-
-Let's say you want to use `function_score` API using `python`. Here is
-a way of doing it:
-
-```sh
-curl -XDELETE "http://localhost:9200/test"
-
-curl -XPUT "http://localhost:9200/test/doc/1" -d '{
-  "num": 1.0
-}'
-
-curl -XPUT "http://localhost:9200/test/doc/2?refresh" -d '{
-  "num": 2.0
-}'
-
-curl -XGET "http://localhost:9200/test/_search?pretty" -d'
-{
-  "query": {
-    "function_score": {
-      "script_score": {
-        "script": "doc[\"num\"].value * _score",
-        "lang": "python"
-      }
-    }
-  }
-}'
-```
-
-gives
-
-```javascript
-{
-   // ...
-   "hits": {
-      "total": 2,
-      "max_score": 2,
-      "hits": [
-         {
-            // ...
-            "_score": 2
-         },
-         {
-            // ...
-            "_score": 1
-         }
-      ]
-   }
-}
-```
-
-Using python with script_fields
--------------------------------
-
-```sh
-curl -XDELETE "http://localhost:9200/test"
-
-curl -XPUT "http://localhost:9200/test/doc/1?refresh" -d'
-{
-  "obj1": {
-   "test": "something"
-  },
-  "obj2": {
-    "arr2": [ "arr_value1", "arr_value2" ]
-  }
-}'
-
-curl -XGET "http://localhost:9200/test/_search" -d'
-{
-  "script_fields": {
-    "s_obj1": {
-      "script": "_source[\"obj1\"]", "lang": "python"
-    },
-    "s_obj1_test": {
-      "script": "_source[\"obj1\"][\"test\"]", "lang": "python"
-    },
-    "s_obj2": {
-      "script": "_source[\"obj2\"]", "lang": "python"
-    },
-    "s_obj2_arr2": {
-      "script": "_source[\"obj2\"][\"arr2\"]", "lang": "python"
-    }
-  }
-}'
-```
-
-gives
-
-```javascript
-{
-  // ...
-  "hits": [
-     {
-        // ...
-        "fields": {
-           "s_obj2_arr2": [
-              [
-                 "arr_value1",
-                 "arr_value2"
-              ]
-           ],
-           "s_obj1_test": [
-              "something"
-           ],
-           "s_obj2": [
-              {
-                 "arr2": [
-                    "arr_value1",
-                    "arr_value2"
-                 ]
-              }
-           ],
-           "s_obj1": [
-              {
-                 "test": "something"
-              }
-           ]
-        }
-     }
-  ]
-}
-```
 
 License
 -------
